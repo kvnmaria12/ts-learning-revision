@@ -1,0 +1,16 @@
+interface Result {
+  id: number;
+  score: number;
+}
+
+interface Games<T> {
+  count: number;
+  results: T[];
+}
+
+const fetchDataa = <T>() => {
+  return { count: 23, results: [] };
+};
+
+const data = fetchDataa<Result>();
+data.results;
